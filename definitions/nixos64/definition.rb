@@ -1,5 +1,5 @@
 iso = {
-  :file => 'nixos-13.10.35497.60b0467/nixos-minimal-13.10.35497.60b0467-x86_64-linux.iso',
+  :file => 'nixos-minimal-13.10.35497.60b0467-x86_64-linux.iso',
   :md5  => 'db3b34cd4cf2030b1a425cd6af6a9a09',
 }
 
@@ -29,11 +29,11 @@ session = {
   :iso_download_timeout => '1000',
   :iso_file             => iso[:file],
   :iso_md5              => iso[:md5],
-  :iso_src              => "http://releases.nixos.org/13.10/#{iso[:file]}",
+  :iso_src              => "http://releases.nixos.org/13.10/nixos-13.10.35497.60b0467/#{iso[:file]}",
   :kickstart_file       => 'configuration.nix',
   :kickstart_port       => '7122',
   :kickstart_timeout    => '10000',
-  :memory_size          => '256',
+  :memory_size          => '512',
   :os_type_id           => 'Linux26_64',
   :postinstall_files    => [ 'postinstall.sh' ],
   :postinstall_timeout  => '10000',
